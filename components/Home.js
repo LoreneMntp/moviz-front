@@ -10,7 +10,7 @@ import { useEffect } from "react";
 function Home() {
   const [newMovies, setnewMovies] = useState([]);
   useEffect(() => {
-    fetch("http://mymoviz-back-rho.vercel.app/movies")
+    fetch("https://mymoviz-back-rho.vercel.app/movies")
       .then((response) => response.json())
       .then((data) => {
         setnewMovies(data.movies);
